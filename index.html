@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>My Favorite Movies</h1>
+        <label for="title">Title:</label>
+        <input type="text" id='movie' placeholder="Movie Title"/>
+        <label for="rating">Rating:</label>
+        <input type="text" id="rating" placeholder="Rate movie from 0 to 10"/>
+        <button id="addMovie">Add Movie</button>
+     <table>
+        <thead>
+            <tr>
+                <th id="title">Title<button id="titleSort">Sort</button></th>
+                <th>Rating<button id="ratingSort">Sort</button></th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody class="data">
+
+        </tbody>
+    </table>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+
+    <style>
+        th {width: 200px;
+        font-size: 20px;}
+        
+        td {width: 200px;
+            text-align: center;}
+        body {background-color: gray;}
+    </style>
+
+</body>
+</html>
